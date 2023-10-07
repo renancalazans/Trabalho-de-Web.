@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nan Web - Contato</title>
+    <link rel="icon" href="logoicone.ico">
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <header class="cabecalho">
+        <div class="conteudo-header">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="logo-home.jpg" alt="Logo" width="90" height="90">
+                </a>
+            </div>
+            <div class="nome-sitio">
+                <p>
+                    <a href="index.html">Nan Web</a>
+                </p>
+            </div>
+            <nav class="menu">
+                <ul>
+                    <li><a href="pagina1.html">Currículo</a></li>
+                    <li><a href="pagina2.html">Serviços</a></li>
+                    <li><a href="pagina3.html">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="conteudo-contato">
+        <h1 class="titulo-pagina">Entre em Contato</h1>
+
+        <!-- Formulário de Contato -->
+        <form id="formulario-contato">
+            <label for="nome">Nome Completo:</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="telefone">Telefone:</label>
+            <input type="tel" id="telefone" name="telefone" required>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="tipo">Pessoa Física ou Jurídica:</label>
+            <select id="tipo" name="tipo">
+                <option value="fisica">Pessoa Física</option>
+                <option value="juridica">Pessoa Jurídica</option>
+            </select>
+
+            <label for="horario">Melhor Horário de Contato:</label>
+            <input type="radio" id="manha" name="horario" value="manha">
+            <label for="manha">Manhã</label>
+            <input type="radio" id="tarde" name="horario" value="tarde">
+            <label for="tarde">Tarde</label>
+            <input type="radio" id="noite" name="horario" value="noite">
+            <label for="noite">Noite</label>
+
+            <label for="servico">Tipo de Serviço Desejado:</label>
+            <input type="checkbox" id="desenvolvimento" name="servico" value="desenvolvimento">
+            <label for="desenvolvimento">Desenvolvimento de HomePage</label>
+            <input type="checkbox" id="outros" name="servico" value="outros">
+            <label for="outros">Outros</label>
+
+            <label for="descricao">Breve Descrição:</label>
+            <textarea id="descricao" name="descricao" rows="4"></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+
+        <!-- Mensagem de Erro -->
+        <div id="mensagem-erro" class="mensagem-erro" style="display: none;">
+            Por favor, preencha todos os campos obrigatórios.
+        </div>
+    </div>
+
+    <script>
+document.addEventListener("DOMContentLoaded", function () {
+  // Seleciona o formulário
+  var formularioContato = document.getElementById("formulario-contato");
+
+  formularioContato.addEventListener("submit", function (event) {
+    event.preventDefault(); // Impede o envio padrão do formulário
+
+    // Obtenha os valores dos campos do formulário
+    var nome = document.getElementById("nome").value;
+    var telefone = document.getElementById("telefone").value;
+    var email = document.getElementById("email").value;
+
+    // Validação do formulário
+    if (nome === "" || telefone === "" || email === "") {
+      // Exibe uma mensagem de erro se campos obrigatórios não forem preenchidos
+      alert("Por favor, preencha todos os campos obrigatórios.");
+    } else {
+      // Envie o formulário (simulação, você pode adicionar aqui o código real para enviar o formulário)
+      // Exibe uma mensagem de sucesso
+      alert("Formulário enviado com sucesso!");
+
+      // Redireciona para a página inicial após 2 segundos (2000 milissegundos)
+      setTimeout(function () {
+        window.location.href = "index.html"; // Substitua pelo URL correto da página inicial
+      }, 2000);
+    }
+  });
+});
+    </script>
+
+</body>
+</html>

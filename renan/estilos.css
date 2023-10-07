@@ -1,0 +1,293 @@
+/* Estilos gerais para o corpo da página */
+body {
+    margin: 0; /* Remova a margem padrão do corpo da página */
+    padding: 0; /* Remova o preenchimento padrão do corpo da página */
+}
+
+/* Estilos para o cabeçalho */
+.cabecalho {
+    background-color: #2c59be;
+    color: #fffffb;
+    font-family: "Montagu Slab", "Rubik", sans-serif;
+    display: flex;
+    justify-content: flex-start; /* Alinhe os elementos à esquerda */
+    padding: 10px 20px;
+    height: 70px;
+}
+
+.logo img {
+    vertical-align: middle;
+    width: 60px; /* Reduza a altura da logo */
+    height: 55px; /* Reduza a altura da logo */
+    margin-top: -5px;
+}
+
+.nome-sitio {
+    font-size: 16px; /* Defina o tamanho do texto "Nan Web" */
+    font-family: "Montagu Slab", "Rubik", sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #fffffb;
+    margin-left: -1px;
+    margin-top: -20px;
+}
+
+.nome-sitio a {
+    text-decoration: none; /* Remova o sublinhado */
+    color: #fffffb; /* Mantenha a cor original do texto */
+}
+
+.menu ul {
+    list-style-type: none;
+    font-family: "Montagu Slab", "Rubik", sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    margin-left: 80px;
+    margin-top: -35px;
+}
+
+.menu ul li {
+    
+    display: inline;
+    margin-right: 10px;
+}
+
+.menu ul li a {
+    
+    text-decoration: none;
+    color: #fffffb;
+}
+
+.menu ul li a:hover {
+    
+    color: #e4e4e471; /* Altere a cor quando o mouse estiver sobre o link */
+}
+
+.menu ul li a.currículo {
+    text-decoration: none;
+    color: #e4e4e471;
+}
+
+.titulo-pagina {
+    font-size: 36px; /* Tamanho grande para o título da página */
+    font-family: "Montagu Slab", "Rubik", sans-serif;
+    color: #2c59be; /* Cor de texto igual à do cabeçalho */
+    margin: 0; /* Remova as margens para alinhar o texto corretamente */
+    background-color: #fffffb; /* Mesma cor de fundo do cabeçalho */
+    text-align: center; /* Centraliza o conteúdo horizontalmente */
+    padding: 20px; /* Espaçamento interno para melhor aparência */
+}
+
+/* Estilos para os tópicos */
+.topicos-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.topico {
+    flex: 1;
+    max-width: 300px;
+    text-align: center;
+    margin: 10px;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+}
+
+.topico:hover {
+    opacity: 0.7;
+}
+
+.texto-topico {
+    display: none;
+    margin-top: 10px;
+}
+
+/* Adicione a animação para mostrar o texto do tópico */
+.mostrar {
+    animation: fadeIn 0.5s;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Estilos para os ícones acima dos títulos dos tópicos */
+.topico img {
+    display: block;
+    width: 60px; /* Largura dos ícones */
+    height: 60px; /* Altura dos ícones */
+    margin: 0 auto 10px; /* Centraliza a imagem e adiciona espaço abaixo */
+}                                   
+
+/* Estilos para os títulos dos tópicos */
+.topico h2 {
+    font-family: "Montagu Slab", "Rubik", sans-serif;
+    color: #2c59be;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.topico h2:hover {
+    color: #e4e4e4; /* Cor ao passar o mouse sobre o título do tópico */
+}
+.texto-topico {
+    display: none; /* Oculta o texto por padrão */
+}
+
+.imagem-centralizada {
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px; /* Adicione o raio desejado para as bordas arredondadas */
+}
+/* Estilos para o conteúdo do currículo */
+.conteudo-curriculo {
+    padding: 20px;
+}
+
+.titulo-pagina {
+    font-size: 36px;
+    font-family: "Montagu Slab", "Rubik", sans-serif;
+    color: #2c59be;
+    margin: 0;
+    background-color: #fffffb;
+    text-align: center;
+    padding: 20px;
+}
+
+.topico-curriculo {
+    margin: 20px 0;
+}
+
+.topico-curriculo h2 {
+    font-family: "Montagu Slab", "Rubik", sans-serif;
+    color: #2c59be;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.topico-curriculo p {
+    font-family: "Rubik", sans-serif;
+    color: #333;
+    font-size: 16px;
+}
+
+/* Estilos para a lista de contatos */
+.contato-lista {
+    list-style-type: none;
+    padding: 0;
+}
+
+.contato-lista li {
+    margin-bottom: 10px;
+}
+
+.contato-lista a {
+    text-decoration: none;
+    color: #2c59be;
+    font-family: "Rubik", sans-serif;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+}
+
+.contato-lista img {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+.tabela-servicos {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    font-family: "Rubik", sans-serif;
+}
+
+.tabela-servicos tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.tabela-servicos th, .tabela-servicos td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.tabela-servicos th {
+    background-color: #2c59be;
+    color: white;
+}
+/* Estilos para o conteúdo da página de contato */
+.conteudo-contato {
+    background-color: #fffffb; /* Cor de fundo */
+    padding: 20px;
+    font-family: "Montagu Slab", "Rubik", sans-serif;
+}
+
+.conteudo-contato h1 {
+    color: #2c59be; /* Cor do título */
+    font-size: 36px; /* Tamanho do título */
+}
+
+/* Estilos para o formulário de contato */
+#formulario-contato {
+    margin-top: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #2c59be; /* Cor das labels */
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: "Rubik", sans-serif;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+button[type="submit"] {
+    background-color: #2c59be;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: "Rubik", sans-serif;
+}
+
+button[type="submit"]:hover {
+    background-color: #1c4078;
+}
+
+/* Estilos para a mensagem de erro */
+.mensagem-erro {
+    background-color: #ffcccc; /* Cor de fundo da mensagem de erro */
+    color: #ff0000; /* Cor do texto da mensagem de erro */
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    display: none; /* Inicialmente oculta */
+}

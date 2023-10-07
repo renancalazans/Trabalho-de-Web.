@@ -1,0 +1,102 @@
+                                                                                                                                                                                   <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <b><title>Nan Web</title></b>
+    <link rel="icon" href="logoicone.ico">
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <header class="cabecalho">
+        <div class="conteudo-header">
+            <div class="logo">
+                <a href="index.html"> <!-- Adicione o link para a página principal aqui -->
+                    <img src="logo-home.jpg" alt="Logo" width="90" height="90">
+                </a>
+            </div>
+            <div class="nome-sitio">
+            <p>
+                <a href="index.html">Nan Web</a> <!-- Adicione o link para a página principal aqui -->
+            </p>
+            </div>
+        <nav class="menu">
+            <ul>
+                <li><a href="pagina1.html">Currículo</a></li>
+                <li><a href="pagina2.html">Serviços</a></li>
+                <li><a href="pagina3.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div>
+        <h1 class="titulo-pagina">Bem-vindo à minha landing page!</h1>
+        <img src="6.jpg" alt="Imagem 6" width="300" height="auto" class="imagem-centralizada">
+    </div>
+    <div class="topicos-container">
+        <div class="topico" onclick="toggleText('historia')">
+            <img src="1.png" alt="Ícone História">
+            <h2>Quem sou eu</h2>
+            <p id="historia" class="texto-topico">Me chamo Renan Santos Calazans, tenho 21 anos.
+                 Nasci e cresci na cidade de Vila Velha-ES.</p>
+        </div>
+        <div class="topico" onclick="toggleText('habilidades')">
+            <img src="2.png" alt="Ícone Habilidades">
+            <h2>Habilidades</h2>
+            <p id="habilidades" class="texto-topico">Sou uma pessoa calma e tranquila para lidar 
+        com as pessoas, sou paciente e sei lidar com as diferenças. Agora no campo das hardskills, 
+        Sou iniciante na área da computação, mas já tenho habilidade com digitação, conhecimentos básicos 
+        em python, Css, Html e Java script. Também possuo conhecimentos básicos sobre banco de dados, Experiência 
+    do usuário e Design de games</p>
+        </div>
+
+        <div class="topico" onclick="toggleText('hobbies')">
+            <img src="3.png" alt="Ícone Hobbies">
+            <h2>Hobbies</h2>
+            <p id="hobbies" class="texto-topico">Sou bem eclético em relação aos meus Hobbies, em casa gosto
+                de ver séries, filmes, animes e jogar principalmente se o jogo for da franquia Pokemon hahaha. 
+                quando saio gosto muito de ir à praia, principalmente se for pela noite. Também gosto de 
+                ir ao shopping, cinema e sair para comer. Antigamente gostava de tocar teclado, porém meu 
+                teclado quebrou, sendo assim não consigo mais treinar. Quando possuo tempo livre também faço 
+                musculação.
+            </p>
+        </div>
+
+        <div class="topico" onclick="toggleText('vidaacademica')">
+            <img src="4.png" alt="Ícone Vida Acadêmica">
+            <h2>Vida Acadêmica</h2>
+            <p id="vidaacademica" class="texto-topico"> No meu ensino fundamental, estudei na escola UMEF Dr. Tuffy Nader. Já 
+                no ensino médio cursei na EEEFM Benício Gonçalves. Iniciei, minha carreira universitária na UFES,
+                onde fiz um período de engenharia civíl, não gostei muito do curso me identifiquei mais com 
+                os conceitos básicos de programação e as matérias que envolvem matemática, que são ágebra linear e 
+                cálculo I. Por isso hoje acredito que me identifico com o curso de ciências da computação que curso 
+                na Universidade de Vila Velha.
+            </p>
+        </div>
+
+        <div class="topico" onclick="toggleText('objetivos')">
+            <img src="5.png" alt="Ícone Objetivos Futuros">
+            <h2>Objetivos Futuros</h2>
+            <p id="objetivos" class="texto-topico">Pretendo seguir na faculdade e depois de um tempo começar 
+                a atuar na área para obter experiência, e depois seguir na área acadêmica me tornando professor 
+                ou desenvolvendo pesquisas.
+            </p>
+        </div>
+    </div>
+
+    <script>
+        // Função para alternar a visibilidade do texto do tópico
+        function toggleText(topicId) {
+            var textElement = document.getElementById(topicId);
+
+            // Verifique se o texto está visível
+            if (textElement.style.display === "block") {
+                textElement.style.display = "none"; // Ocultar o texto
+            } else {
+                textElement.style.display = "block"; // Mostrar o texto
+            }
+        }
+    </script>
+</body>
+</html>
+

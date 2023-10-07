@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nan Web - Serviços</title>
+    <link rel="icon" href="logoicone.ico">
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <header class="cabecalho">
+        <div class="conteudo-header">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="logo-home.jpg" alt="Logo" width="90" height="90">
+                </a>
+            </div>
+            <div class="nome-sitio">
+                <p>
+                    <a href="index.html">Nan Web</a>
+                </p>
+            </div>
+            <nav class="menu">
+                <ul>
+                    <li><a href="pagina1.html">Currículo</a></li>
+                    <li><a class="currículo">Serviços</a></li>
+                    <li><a href="pagina3.html">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="conteudo-servicos">
+        <h1 class="titulo-pagina">Meus serviços</h1>
+
+        <!-- Tabela de Preços -->
+        <table class="tabela-servicos">
+            <tr>
+                <td>Serviço</td>
+                <td>Descrição</td>
+                <td>Preço</td>
+            </tr>
+            <tr>
+                <td>Desenvolvimento de HomePage</td>
+                <td>Criação de uma página inicial personalizada</td>
+                <td>R$ 500,00</td>
+            </tr>
+            <tr>
+                <td>Página Estática HTML e CSS</td>
+                <td>Desenvolvimento de uma página estática</td>
+                <td>R$ 800,00</td>
+            </tr>
+            <tr>
+                <td>Página Dinâmica</td>
+                <td>Desenvolvimento de uma página com recursos interativos</td>
+                <td>R$ 1200,00</td>
+            </tr>
+            <tr>
+                <td>Página Super Avançada</td>
+                <td>Desenvolvimento de uma página com recursos avançados</td>
+                <td>R$ 2000,00</td>
+            </tr>
+        </table>
+    </div>
+
+    <script>
+           // Função para destacar a linha da tabela ao passar o mouse
+    function highlightRow(row) {
+        row.style.backgroundColor = "#e4e4e4"; // Cor de destaque ao passar o mouse
+    }
+
+    // Função para remover o destaque da linha ao tirar o mouse
+    function unhighlightRow(row) {
+        row.style.backgroundColor = ""; // Remove a cor de destaque
+    }
+
+    // Seleciona todas as linhas da tabela (exceto o cabeçalho)
+    var rows = document.querySelectorAll(".tabela-servicos tr:not(:first-child)");
+
+    // Adiciona eventos de mouse às linhas da tabela
+    rows.forEach(function(row) {
+        row.addEventListener("mouseover", function() {
+            highlightRow(row);
+        });
+        row.addEventListener("mouseout", function() {
+            unhighlightRow(row);
+        });
+    });
+    </script>
+</body>
+</html>
