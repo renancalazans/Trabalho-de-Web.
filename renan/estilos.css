@@ -1,7 +1,7 @@
 /* Estilos gerais para o corpo da página */
 body {
-    margin: 0; /* Remova a margem padrão do corpo da página */
-    padding: 0; /* Remova o preenchimento padrão do corpo da página */
+    margin: 0; /* Remove a margem padrão do corpo da página */
+    padding: 0; /* Remove o preenchimento padrão do corpo da página */
 }
 
 /* Estilos para o cabeçalho */
@@ -10,7 +10,7 @@ body {
     color: #fffffb;
     font-family: "Montagu Slab", "Rubik", sans-serif;
     display: flex;
-    justify-content: flex-start; /* Alinhe os elementos à esquerda */
+    justify-content: flex-start; /* Alinha os elementos à esquerda */
     padding: 10px 20px;
     height: 70px;
 }
@@ -33,8 +33,8 @@ body {
 }
 
 .nome-sitio a {
-    text-decoration: none; /* Remova o sublinhado */
-    color: #fffffb; /* Mantenha a cor original do texto */
+    text-decoration: none; /* Remove o sublinhado */
+    color: #fffffb; /* Mantem a cor original do texto */
 }
 
 .menu ul {
@@ -62,7 +62,7 @@ body {
 
 .menu ul li a:hover {
     
-    color: #e4e4e471; /* Altere a cor quando o mouse estiver sobre o link */
+    color: #e4e4e471; /* Altera a cor quando o mouse estiver sobre o link */
 }
 
 .menu ul li a.currículo {
@@ -71,13 +71,13 @@ body {
 }
 
 .titulo-pagina {
-    font-size: 36px; /* Tamanho grande para o título da página */
+    font-size: 36px; 
     font-family: "Montagu Slab", "Rubik", sans-serif;
-    color: #2c59be; /* Cor de texto igual à do cabeçalho */
-    margin: 0; /* Remova as margens para alinhar o texto corretamente */
-    background-color: #fffffb; /* Mesma cor de fundo do cabeçalho */
-    text-align: center; /* Centraliza o conteúdo horizontalmente */
-    padding: 20px; /* Espaçamento interno para melhor aparência */
+    color: #2c59be;
+    margin: 0; 
+    background-color: #fffffb; 
+    text-align: center; 
+    padding: 20px; 
 }
 
 /* Estilos para os tópicos */
@@ -147,7 +147,7 @@ body {
 .imagem-centralizada {
     display: block;
     margin: 0 auto;
-    border-radius: 10px; /* Adicione o raio desejado para as bordas arredondadas */
+    border-radius: 10px; /* Adiciona o raio desejado para as bordas arredondadas */
 }
 /* Estilos para o conteúdo do currículo */
 .conteudo-curriculo {
