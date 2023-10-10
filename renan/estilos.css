@@ -17,13 +17,13 @@ body {
 
 .logo img {
     vertical-align: middle;
-    width: 60px; /* Reduza a altura da logo */
-    height: 55px; /* Reduza a altura da logo */
+    width: 60px; 
+    height: 55px; 
     margin-top: -5px;
 }
 
 .nome-sitio {
-    font-size: 16px; /* Defina o tamanho do texto "Nan Web" */
+    font-size: 16px; 
     font-family: "Montagu Slab", "Rubik", sans-serif;
     margin: 0;
     padding: 0;
@@ -107,7 +107,6 @@ body {
     margin-top: 10px;
 }
 
-/* Adicione a animação para mostrar o texto do tópico */
 .mostrar {
     animation: fadeIn 0.5s;
 }
@@ -147,7 +146,7 @@ body {
 .imagem-centralizada {
     display: block;
     margin: 0 auto;
-    border-radius: 10px; /* Adiciona o raio desejado para as bordas arredondadas */
+    border-radius: 20px; /* Adiciona o raio desejado para as bordas arredondadas */
 }
 /* Estilos para o conteúdo do currículo */
 .conteudo-curriculo {
@@ -291,3 +290,4 @@ button[type="submit"]:hover {
     border-radius: 5px;
     display: none; /* Inicialmente oculta */
 }
+
